@@ -7,8 +7,11 @@ test('Create an answer', () => {
   const answer = answerQuestion.execute({
     questionId: 'questionId-1',
     content: 'nova resposta',
-    instructorId: 'instructorId-1',
+    authorId: 'instructorId-1',
+    authorRole: 'professor',
   })
+
+  console.log(answer)
 
   expect(answer.content).toEqual('nova resposta')
 })
