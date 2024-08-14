@@ -2,6 +2,10 @@
   "name": "ddd",
   "module": "index.ts",
   "node-version": "20.10.0",
+  "scripts": {
+    "test": "bunx vitest run",
+    "test:watch": "bunx vitest"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/bun": "latest",
